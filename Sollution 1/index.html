@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Water Tank Sollution 1</title>
+  </head>
+  <body>
+    <div class="header"><h1>Water Tank Problem Sollution 1</h1></div>
+    <div class="inputarea">
+      <input
+        type="text"
+        id="inputArr"
+        name="inputArr"
+        placeholder="e.g. 0,4,0,0,0,6,0,6,4,6"
+      />
+      <!-- <i>Input=> 0,4,0,0,0,6,0,6,4,6</i> -->
+      <button class="button" id="array-btn" onclick="fetchArr()">
+        Compute Water
+      </button>
+
+      <button class="button" id="array-btn" onclick="tableCollapse()">
+        Table Colapse
+      </button>
+    </div>
+    <h1 id="WaterUnit"></h1>
+    <div id="main">
+      <div id="BAW1">
+        <h3>Chart of Bricks And Water</h3>
+        <div id="BAW"></div>
+      </div>
+      <div id="OW1">
+        <h3>Chart of Only Water</h3>
+        <div id="OW"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
