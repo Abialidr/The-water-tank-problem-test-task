@@ -1,43 +1,38 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Tank Sollution 2</title>
-    <style>
-        #chart-container {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
-        #chart-container1 {
-            position: relative;
-            height: 100vh;  
-            overflow: hidden;
-        }
-    </style>
-    <link rel="stylesheet" href="./Sollution2/style.css" />
-    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
-</head>
-    <div class="header"><h1>Water Tank Problem Sollution 2</h1></div>
+<html>
+  <head>
+    <link rel="stylesheet" href="./Sollution 1/styles.css" />
+    <title>Water Tank Sollution 1</title>
+  </head>
+  <body>
+    <div class="header"><h1>Water Tank Problem Sollution 1</h1></div>
     <div class="inputarea">
-        <input type="text" id="inputArr" name="inputArr" placeholder="e.g. 0,4,0,0,0,6,0,6,4,0">
-        <!-- <i>Input=> 0,4,0,0,0,6,0,6,4,0</i> -->
-        <button class="button" id="array-btn" onclick="fetchArr()">Compute Water</button>
-        
+      <input
+        type="text"
+        id="inputArr"
+        name="inputArr"
+        placeholder="e.g. 0,4,0,0,0,6,0,6,4,6"
+      />
+      <!-- <i>Input=> 0,4,0,0,0,6,0,6,4,6</i> -->
+      <button class="button" id="array-btn" onclick="fetchArr()">
+        Compute Water
+      </button>
+
+      <button class="button" id="array-btn" onclick="tableCollapse()">
+        Table Colapse
+      </button>
     </div>
-    <h1><span id="waterunit"></span></h1>
-    <div class="waterAndWallContainer">
-    
-    <h3><span id="brickAndWater"></span></h3>
-        <div id="chart-container"></div>
+    <h1 id="WaterUnit"></h1>
+    <div id="main">
+      <div id="BAW1">
+        <h3>Chart of Bricks And Water</h3>
+        <div id="BAW"></div>
+      </div>
+      <div id="OW1">
+        <h3>Chart of Only Water</h3>
+        <div id="OW"></div>
+      </div>
     </div>
 
-    <div class="onlyWaterContainer">
-    <h3><span id="Water"></span></h3>
-        <div id="chart-container1"></div>
-    </div>
-
-    <script src="Sollution2/index.js"></script>
-</body>
+    <script type="text/javascript" src="./Sollution 1/index.js"></script>
+  </body>
 </html>
